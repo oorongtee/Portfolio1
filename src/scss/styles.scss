@@ -1,0 +1,389 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//自訂
+$color: cyan;
+@for $i from 10 through 100 {
+  @if $i % 10 == 0 {
+    $percentage: $i*1%;
+    .darken-#{$i} {
+      background-color: darken($color, $percentage);
+    }
+    .lighten-#{$i} {
+      background-color: lighten($color, $percentage);
+    }
+    .mix-green-#{$i} {
+      background-color: mix(teal, $color, $percentage);
+    }
+    .mix-white-#{$i} {
+      background-color: mix(white, $color, $percentage);
+    }
+  }
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ms-7 {
+    margin-left: 7rem;
+  }
+
+.mb-15 {
+    margin-bottom: 15rem; 
+    }
+
+.display-7 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    }
+.fs-10{
+    font-size: 12px;
+
+}
+
+@keyframes colorChange {
+    0% { color: initial; }
+    100% { color: rgba($color: #7E31FC, $alpha: 1.0); }
+}
+
+//自訂
+
+body {
+  margin: 0;
+  height: 200vh;
+  padding-top: 50px;
+  background-color: rgba(31, 120, 125, 0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 7000px;  /* 調整大小以達到合適的效果 */
+    height: 7000px;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(31, 120, 125, 0.26) 0%, rgba(0, 0, 0, 0) 30%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#leftSide{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#rightSide{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.nav-item{
+    text-shadow: 0px 1px 1px rgb(227, 238, 69);
+    transition: all .2s ease-out;
+}
+
+.nav-item:hover{
+    text-shadow: 0px 1px 1px rgba(119, 235, 241, 0.9);
+    transform: scale(1.2);
+}
+
+.letPlay {
+    position: relative;
+    overflow: hidden;
+    color: initial;
+}
+
+.letPlay:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgba(227, 238, 69, 0.521);
+    overflow: hidden;
+    transition: width 1.5s;
+    white-space: nowrap;
+}
+
+.letPlay:active:after {
+    width: 100%;
+}
+
+.introText{
+    text-shadow: 0px 1px 1px rgba(119, 235, 241, 0.9);
+}
+
+
+.intro-box {
+  text-shadow: 0px 1px 1px rgb(129, 128, 128);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: all .5s ease-out;
+  padding: 15px 15px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-box:hover {
+  background: rgba(19, 219, 186, 0.637);
+  box-shadow: 0px 22px 22px rgba(0, 0, 0, .25);
+}
+
+.intro-line {
+  width: 0px;
+  height:2px;
+  border-radius: 1px;
+  margin: 5px 0 5px 0;
+  transition: all .5s ease;
+  background-color: rgb(227, 238, 69);
+}
+
+.intro-box:hover .intro-line {
+  width: 100px;
+}
+
+
+.experienceTimeline{
+  width:3px; 
+  height:50px; 
+  background-color:black; 
+  border:none;
+  margin: auto;
+}
+
+  // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size: 2.5rem; 
+      }
+      h2 {
+        font-size: 1.5rem; 
+      }
+      h3 {
+        font-size: 1.2rem; 
+      }
+      h4{
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+      .letPlay{
+        font-size: 0.7rem;
+      }
+      #skillCard{
+        font-size: 11px;
+      }
+      #socialLink img{
+        transform: scale(0.9);
+      }
+      #navigation a {
+        font-size: 20px;
+      }
+      
+      #projectBadge{
+        font-size: 8px;
+      }
+      .projectLink img{
+        transform: scale(0.7);
+      }
+      #viewMore{
+        transform: scale(0.7);
+      }
+      #experienceBadge{
+        font-size: 10.5px;
+      }
+      .experienceTime h3{
+        font-size: 15px;
+      }
+      #photoGallery h1{
+        font-size: 28px;
+      }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    h1 {
+        font-size: 3.5rem; 
+      }
+      h2 {
+        font-size: 2rem; 
+      }
+      h3 {
+        font-size: 1.5rem; 
+      }
+      h4{
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+      .letPlay{
+        font-size: 1rem;
+      }
+      #skillCard{
+        font-size: 15px;
+      }
+      #socialLink img{
+        transform: scale(0.9);
+      }
+      #navigation{
+        transform: scale(0.85);
+      }
+      #navigation a {
+        font-size: 20px;
+      }
+      
+      #projectBadge{
+        font-size: 10px;
+      }
+      .projectLink img{
+        transform: scale(0.7);
+      }
+      #viewMore{
+        transform: scale(0.7);
+      }
+      #experienceBadge{
+        font-size: 10.5px;
+      }
+      .experienceTime h3{
+        font-size: 15px;
+      }
+      #photoGallery h1{
+        font-size: 28px;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem; 
+      }
+      h2 {
+        font-size: 1.5rem; 
+      }
+      h3 {
+        font-size: 1.2rem; 
+      }
+      h4{
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+      .letPlay{
+        font-size: 0.65rem;
+      }
+      #skillCard{
+        font-size: 11px;
+      }
+      #socialLink img{
+        transform: scale(0.9);
+      }
+      #navigation a {
+        font-size: 20px;
+      }
+      
+      #projectBadge{
+        font-size: 10px;
+      }
+      .projectLink img{
+        transform: scale(0.7);
+      }
+      #viewMore{
+        transform: scale(0.7);
+      }
+      #experienceBadge{
+        font-size: 10.5px;
+      }
+      .experienceTime h3{
+        font-size: 15px;
+      }
+      #photoGallery h1{
+        font-size: 28px;
+      }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      #leftSide {
+        width: 50%;
+      }
+      #rightSide {
+        width: 50%;
+        margin-left: 50%;
+      }
+  }
+  
+
+  @media (min-width: 992px) {
+    h1 {
+        font-size: 2.8rem; 
+      }
+      h2 {
+        font-size: 1.6rem; 
+      }
+      h3 {
+        font-size: 1.2rem; 
+      }
+      h4{
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+      #skillCard{
+        font-size: 12px;
+      }
+      #socialLink img{
+        transform: scale(0.9);
+      }
+      #navigation a {
+        font-size: 25px;
+      }
+      #projectBadge{
+        font-size: 12px;
+      }
+      .projectLink img{
+        transform: scale(0.8);
+      }
+      #viewMore{
+        transform: scale(0.8);
+      }
+      #experienceBadge{
+        font-size: 12px;
+      }
+
+  }
+  
+@media (min-width: 1200px) {
+      h1 {
+        font-size: 3.6rem; 
+      }
+      h2 {
+        font-size: 2rem; 
+      }
+      h3 {
+        font-size: 1.5rem; 
+      }
+      h4{
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      #skillCard{
+        font-size: 16px;
+      }
+
+
+}

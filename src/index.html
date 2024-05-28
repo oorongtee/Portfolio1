@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Ray Portfolio</title>
+    <link rel="stylesheet" href="./scss/styles.scss">
+</head>
+
+<body>
+<div id="light"></div>
+<div class="flex-container">
+    <!-- 左邊 -->
+    <!-- 1.介紹卡 2. 技能 3. Navbar 與 social link-->
+    <div id="leftSide" class="text-black">
+        <div id="introductionCard" class="">
+            <h1 class="fw-bold mb-1">KuanJuei Chen</h1>
+            <h2 class="fw-bold mb-5">Junior Frontend Engineer</h2>
+            <p class="letPlay mb-5" data-text="//////////////////////////////////////////ClickMe//////////////////////////////////////////HireME!!!">//////////////////////////////////////////ClickMe//////////////////////////////////////////</p>
+            <h4 class="mb-5">My interest in web development started
+                back in 2012. My interest in web development</h4> 
+        </div>
+        <div id="skillCard" class="container row mb-3">
+                <div class="col-6 col-sm-5"><img src="./svg/alt-battery-2-svgrepo-com.svg" alt="Battery 2" width="16" height="16">   JavaScript (ES6)</div>
+                <div class="col-6 col-sm-5"><img src="./svg/alt-battery-4-svgrepo-com.svg" alt="Battery 4" width="16" height="16">   Tailwind/Bootstrap</div>
+            
+                <div class="w-100"></div>
+            
+                <div class="col-6 col-sm-5"><img src="./svg/alt-battery-0-svgrepo-com.svg" alt="Battery 0" width="16" height="16">   React</div>
+                <div class="col-6 col-sm-5"><img src="./svg/alt-battery-0-svgrepo-com.svg" alt="Battery 0" width="16" height="16">   Redux</div>
+        </div>
+        <div id="navBar" class="d-flex justify-content-between container">
+            <div id="socialLink" class="col">
+              <div class="d-flex flex-column m-1 gap-3">
+              <a href="mailto:ray841206@gmail.com">
+                  <img src="./svg/email-svgrepo-com.svg" alt="Email" width="32" height="32">
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./svg/facebook-svgrepo-com.svg" alt="Facebook" width="32" height="32">
+              </a>
+              <a href="https://github.com/oorongtee" target="_blank">
+              <img src="./svg/github-svgrepo-com.svg" alt="Github" width="32" height="32">
+              </a>
+              </div>
+            </div>
+
+
+            <nav id="navigation" class="col navbar">
+                <ul class="navbar-nav row">
+                    <li class="nav-item align-self-end display-7 mb-3"><a class="nav-link text-lg" href="#intro" onclick="scrollToSection(event, 'section1')"><img src="./svg/arrow-right-svgrepo-com.svg" alt="Arrow Right" width="32" height="32">ABOUT</a></li>
+                    <li class="nav-item align-self-end display-7 mb-3"><a class="nav-link text-lg" href="#project" onclick="scrollToSection(event, 'section2')"><img src="./svg/arrow-right-svgrepo-com.svg" alt="Arrow Right" width="32" height="32">PROJECTS</a></li>
+                    <li class="nav-item align-self-end display-7 mb-3"><a class="nav-link text-lg" href="#experience" onclick="scrollToSection(event, 'section3')"><img src="./svg/arrow-right-svgrepo-com.svg" alt="Arrow Right" width="32" height="32">EXPERIENCE</a></li>
+                    <li class="nav-item align-self-end display-7 mb-3"><a class="nav-link text-lg" href="#photoGallery" onclick="scrollToSection(event, 'section4')"><img src="./svg/arrow-right-svgrepo-com.svg" alt="Arrow Right" width="32" height="32">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 右邊 -->
+    <!-- 1.自介 2. 作品卡 3. 工作經歷 4. 其他-->
+    <div id="rightSide" class="text-black">
+        <section id="intro">
+          <h4 class="introText">My interest in web development started back in 2012. My interest in web development.My interest in web development started back in 2012. My interest in web development.My interest in web development started back in 2012. My interest in web development.My interest in web development started back in 2012. My interest in web development.My interest in web development started back in 2012. My interest in web development.My interest in web development started back in 2012. My interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web developmentMy interest in web development</h4>
+        </section>
+
+        <section id ="project" class="LinkCard">
+            <div class="container text-primary"><!-- 包住所以卡片 -->
+            <div class="intro-box text-primary d-flex row"><!-- 單一卡片 -->
+                <div class="cardPicture col-4">
+                    <img src="./img/123.png" alt="123" class="img-fluid">
+                </div>
+
+                <div class="col-8">
+                <h3 class="text-primary">NameNameName</h3>
+                <div class="intro-line"></div>
+                <p class="text-success fs-10">
+                    rnet. My interest in web development started
+                     back in 2012 when I decided to try editing custom Tumblr trnet. My interest in web development started
+                     back in 2012 when I decided to try editing custom Tumblr trnet. My
+                </p>
+                <div id="projectBadge" class="container row mb-3 justify-content-center">
+                    
+                    <span class="badge rounded-pill bg-success col-3 col-md-4 col-lg-3 me-3 mt-2">JavaScript</span>
+                    <span class="badge rounded-pill bg-warning col-3 col-md-4 col-lg-3 me-3 mt-2">Tailwind</span>
+                    <span class="badge rounded-pill bg-info text-dark col-3 col-md-4 col-lg-3 me-3 mt-2">React</span>
+
+                    <span class="badge rounded-pill bg-info text-dark col-3 col-md-4 col-lg-3 me-3 mt-2">Redux</span>
+                    <span class="badge rounded-pill bg-info text-dark col-3 col-md-4 col-lg-3 me-3 mt-2">Redux</span>
+                    <span class="badge rounded-pill bg-info text-dark col-3 col-md-4 col-lg-3 me-3 mt-2">Redux</span>
+
+                </div>
+                <div class="projectLink d-flex justify-content-end">
+                  <a href="https://github.com/oorongtee" target="_blank" class="me-4">
+                    <img src="./svg/github-svgrepo-com.svg" alt="Github" width="32" height="32">
+                  </a>
+                  <a href="https://github.com/oorongtee" target="_blank" class="me-2">
+                      <img src="./svg/link-external-new-window-open-svgrepo-com.svg" alt="Github" width="32" height="32">
+                  </a>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+          <!-- 空白格 -->
+        <section>
+            <div id="viewMore" class="text-end mb-15">
+                <a href="https://github.com/oorongtee" target="_blank" class="me-1 fs-4 text-dark">View More
+                  <img src="./svg/link-external-new-window-open-svgrepo-com.svg" alt="Github" width="28" height="28">
+                </a>
+            </div>
+        </section>
+
+        <section id ="experience" class="LinkCard ">
+            <div class="container text-primary"><!-- 包住所以卡片 -->
+              <div class="intro-box text-primary d-flex row"><!-- 單一卡片 -->
+                <div class="experienceTime col-4 d-flex flex-column align-items-center">
+                    <h3 class="text-light">Mar 2022</h3>
+                    <img id ="experienceTimeLine" src="./svg/line-xl-svgrepo-com.svg" alt="Battery 2" width="30" height="50">
+                    <h3 class="text-light">May 2022</h3>
+                </div>
+                <div class="col-8">
+                <h3 class="text-primary">Project Planning Specialist - Bitap.co</h3>
+                <div class="intro-line"></div>
+                <p class="text-success">
+                    rnet. My interest in web development started
+                     back in 2012 when I decided to try editing custom Tumblr trnet. My interest in web development started
+                     back in 2012 when I decided to try editing custom Tumblr trnet. My
+                     My interest in web development started
+                     back in 2012 when I decided to try editing custom Tumblr trnet. My
+                </p>
+                <div id="experienceBadge" class="container mb-2">
+                  <div class="row justify-content-center">
+                    <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Poduct Design</span>
+                    <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Product Manage</span>
+                  </div>
+                  <div class="row justify-content-center">
+                    <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Blockchain Dev</span>
+                    <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Blockchain Dev</span>
+                  </div>
+                </div>
+                <div class="projectLink d-flex justify-content-end">
+                  <a href="https://freeportmeta.com/" target="_blank" class="me-2">
+                      <img src="./svg/link-external-new-window-open-svgrepo-com.svg" alt="Github" width="32" height="32">
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="intro-box text-primary d-flex row"><!-- 單一卡片 -->
+              <div class="experienceTime col-4 d-flex flex-column align-items-center">
+                  <h3 class="text-light">Mar 2022</h3>
+                  <img id ="experienceTimeLine" src="./svg/line-xl-svgrepo-com.svg" alt="Battery 2" width="30" height="50">
+                  <h3 class="text-light">May 2022</h3>
+              </div>
+              <div class="col-8">
+              <h3 class="text-primary">Project Planning Specialist - Bitap.co</h3>
+              <div class="intro-line"></div>
+              <p class="text-success">
+                  rnet. My interest in web development started
+                   back in 2012 when I decided to try editing custom Tumblr trnet. My interest in web development started
+                   back in 2012 when I decided to try editing custom Tumblr trnet. My
+                   My interest in web development started
+                   back in 2012 when I decided to try editing custom Tumblr trnet. My
+              </p>
+              <div id="experienceBadge" class="container mb-2">
+                <div class="row justify-content-center">
+                  <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Poduct Design</span>
+                  <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Product Manage</span>
+                </div>
+                <div class="row justify-content-center">
+                  <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Blockchain Dev</span>
+                  <span class="badge rounded-pill bg-light text-dark col-6 col-md-5 col-lg-5 me-2 mt-2">Blockchain Dev</span>
+                </div>
+              </div>
+              <div class="projectLink d-flex justify-content-end">
+                <a href="https://freeportmeta.com/" target="_blank" class="me-2">
+                    <img src="./svg/link-external-new-window-open-svgrepo-com.svg" alt="Github" width="32" height="32">
+                </a>
+              </div>
+              </div>
+          </div>
+            </div>
+        </section>
+        <section>
+          <div id="viewMore" class="text-end mb-20">
+              <a href="https://github.com/oorongtee" target="_blank" class="me-4 fs-4 text-dark">View More
+                <img src="./svg/link-external-new-window-open-svgrepo-com.svg" alt="Github" width="28" height="28">
+              </a>
+          </div>
+        </section>
+
+
+
+        <section id="photoGallery" class="py-5">
+            <h1 class="text-center">Photo Gallery</h1>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./img/cover-1920-bd460362.jpg" width="500px" alt="First">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5> 
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="3000">
+                        <img src="./img/Cute_dog.jpg" width="500px" alt="Second">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+    </div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
